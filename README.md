@@ -24,6 +24,11 @@ At SWGEmu, Emulator refers to the software the SWGEmu team is building. This Emu
   * Install dependencies
 
         sudo apt-get install -y build-essential default-libmysqlclient-dev default-mysql-server liblua5.3-dev libdb5.3-dev libssl-dev cmake git default-jre gcc g++ git gdb automake make libreadline-dev libncurses5-dev libneon27 libaprutil1-dev libtool openjdk-7-jre openjdk-7-jre-headless libgtest-dev screen lua5.1 mysql-server mysql-workbench libmysqlclient-dev libssl-dev libboost-dev libdb5.3-dev 
+        
+  * Setup Directories
+
+        sudo apt-get update && sudo apt-get install -y -q git && git clone https://github.com/TrigsC/MySWGEmuRepo.git && cp -i /home/swgemu/DevEnv/README.md /home/swgemu/Documents && mkdir setup && cp -i /home/swgemu/DevEnv/setup/* /home/swgemu/setup/ && mkdir run && cp -r /home/swgemu/DevEnv/run/* /home/swgemu/run/ && chmod -v +x /home/swgemu/DevEnv/bin/* && cat ~/DevEnv/bin/pathto &>> ~/.bashrc
+    
   * Clone core3 repository somewhere  (~/git)
 
         git clone http://review.swgemu.com/Core3
